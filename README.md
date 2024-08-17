@@ -8,13 +8,13 @@ this project is highly inspired on gpufetch, but it doesn't work on AMD GPUs
 
 # Features:
 
-- [ x ] Display basic information (see below)
+- [x] Display basic information (see below)
 
-- [ x ] Do not depend on external libraries (may change in the future, maybe in favor of using libdrm)
+- [x] Do not depend on external libraries (may change in the future, maybe in favor of using libdrm)
 
-- [ x ] Basic Ascii art display
+- [x] Basic Ascii art display
 
-- [ x ] Configurable
+- [x] Configurable
 
 # Installation
 
