@@ -11,8 +11,8 @@ debug:
 test:
 	./$(EXE)
 install:
-	install -Dm755 ./$(CC) /usr/local/bin/$(CC)
+	install -Dm755 ./$(EXE) /usr/local/bin/$(EXE)
 uninstall:
-	rm /usr/local/bin/$(CC)
+	rm /usr/local/bin/$(EXE)
 clean:
 	rm -f $(OBJ) $(EXE) debug
