@@ -12,6 +12,23 @@ void readconf()
 	FILE *file = fopen(config_file_path, "r");
 	if (file == NULL)
 	{
+		infoOrder[infoOrderCount++] = INFO_GPU_NAME;
+		infoOrder[infoOrderCount++] = INFO_DRIVER;
+		infoOrder[infoOrderCount++] = INFO_PCIE_ID;
+		infoOrder[infoOrderCount++] = INFO_VBIOS;
+		infoOrder[infoOrderCount++] = INFO_VENDOR;
+		infoOrder[infoOrderCount++] = INFO_DMA_MASK;
+		infoOrder[infoOrderCount++] = INFO_ENABLED;
+		infoOrder[infoOrderCount++] = INFO_LINK_SPEED;
+		infoOrder[infoOrderCount++] = INFO_LINK_WIDTH;
+		infoOrder[infoOrderCount++] = INFO_PERF_MODE;
+		infoOrder[infoOrderCount++] = INFO_USAGE;
+		infoOrder[infoOrderCount++] = INFO_MEM_GT_USAGE;
+		infoOrder[infoOrderCount++] = INFO_VRAM_USAGE;
+		infoOrder[infoOrderCount++] = INFO_TTL;
+		infoOrder[infoOrderCount++] = INFO_CURRENT_FREQ;
+		infoOrder[infoOrderCount++] = INFO_CURRENT_PCISPEED;
+		infoOrder[infoOrderCount++] = INFO_CURRENT_MEMSPEED;
 		return;
 	}
 
