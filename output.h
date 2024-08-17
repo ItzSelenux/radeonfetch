@@ -13,11 +13,20 @@ else
 	alimit = 18;
 }
 
-	for (int i = 0; i < infoOrderCount; i++)
+	for (int i = 0; i < alimit; i++)
 	{
-		 int index = (i < alimit) ? i : (alimit - 1);
+		int index = (i < alimit) ? i : (alimit - 1);
 		printf("%-10s   ", ascii_art[index]);
-		InfoType type = infoOrder[i];
+
+		InfoType type;
+		if (i < infoOrderCount)
+		{
+			type = infoOrder[i];
+		}
+		else
+		{
+			type = INFO_COUNT;
+		}
 
 		switch (type)
 		{
@@ -180,6 +189,7 @@ else
 				break;
 
 			default:
+				printf("\n");
 				break;
 		}
 	}

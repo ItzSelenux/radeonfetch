@@ -17,8 +17,7 @@ void getvalues(char *cfile, char **output)
 	free(path);
 	if (ffile == NULL)
 	{
-		fprintf(stderr, "Error opening file: %s\n", path);
-		*output = NULL;
+		*output = "Unknown";
 		return;
 	}
 
@@ -32,7 +31,7 @@ void getvalues(char *cfile, char **output)
 			line[len - 1] = '\0';
 		}
 
-		size_t output_size = len + 1; // Include space for null terminator
+		size_t output_size = len + 1;
 		*output = (char *)malloc(output_size);
 		if (*output == NULL)
 		{
