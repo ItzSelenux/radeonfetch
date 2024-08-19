@@ -28,21 +28,32 @@ void mapgpu()
 			{
 				token += 2;
 
-				name = malloc(strlen(token) + 1);
-				if (name != NULL)
+				if (strstr(token, "Graphics") != NULL ||
+					strstr(token, "Radeon") != NULL ||
+					strstr(token, "Vega") != NULL)
 				{
-					strcpy(name, token);
+					name = malloc(strlen(token) + 1);
+					if (name != NULL)
+					{
+						strcpy(name, token);
+					}
+					break;
 				}
 			}
 			else
 			{
-				name = malloc(strlen(line) + 1);
-				if (name != NULL)
+				if (strstr(line, "Graphics") != NULL ||
+					strstr(line, "Radeon") != NULL ||
+					strstr(line, "Vega") != NULL)
 				{
-					strcpy(name, line);
+					name = malloc(strlen(line) + 1);
+					if (name != NULL)
+					{
+						strcpy(name, line);
+					}
+					break;
 				}
 			}
-			break;
 		}
 	}
 

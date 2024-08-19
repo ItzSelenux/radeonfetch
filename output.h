@@ -1,17 +1,17 @@
-void PrintInfo() {
-
-const char **ascii_art;
-int alimit;
-if (strcmp(desiredascii, "vega") == 0)
+void PrintInfo()
 {
-	ascii_art = ascii_vega;
-	alimit = 15;
-}
-else
-{
-	ascii_art = ascii_radeon;
-	alimit = 18;
-}
+	const char **ascii_art;
+	int alimit;
+	if (strcmp(desiredascii, "vega") == 0)
+	{
+		ascii_art = ascii_vega;
+		alimit = 15;
+	}
+	else
+	{
+		ascii_art = ascii_radeon;
+		alimit = 18;
+	}
 
 	for (int i = 0; i < alimit; i++)
 	{
@@ -85,7 +85,8 @@ else
 				break;
 
 			case INFO_ENABLED:
-				if (senabled) {
+				if (senabled)
+				{
 					getvalues(fenabled, &enabled);
 					printf("%s %s\n", aenabled, enabled);
 				}
@@ -100,7 +101,8 @@ else
 				break;
 
 			case INFO_LINK_SPEED:
-				if (slinkspeed) {
+				if (slinkspeed)
+				{
 					getvalues(flinkspeed, &linkspeed);
 					printf("%s %s\n", alinkspeed, linkspeed);
 				}

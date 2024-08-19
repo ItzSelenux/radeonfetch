@@ -61,7 +61,6 @@ char *name, *pciid, *cores, *vbios, *usage, *vendor, *linkspeed, *linkwidth, *dm
 	*dpmmclk, *perfmode, *perflevel;
 
 // Main enumeration
-
 typedef enum {
 	INFO_GPU_NAME,
 	INFO_DRIVER,
